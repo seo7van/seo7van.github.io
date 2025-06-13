@@ -1,0 +1,56 @@
+/* AboutMe 전체 */
+.project-section {
+  position: relative; /* 🔥 기준 영역 지정 */
+  height: 100vh;
+  scroll-margin-top: -300px;
+}
+
+/* 메인 배경 이미지 */
+.project_main_image {
+  position: relative;
+  margin: auto;
+  display: block;
+}
+
+  /* 팟스팟 */
+    .project_overlay_image_1 {
+    position: absolute;
+    top: 53.7%;
+    left: 24.5%;
+    width: 375px;
+    height: auto; /* 세로 비율 유지 */
+    transform: translate(-50%, -50%);
+  }
+
+  /* 메디파스 */
+  .project_overlay_image_2 {
+    position: absolute;
+    top: 53.7%;
+    left: 50%;
+    width: 375px;
+    height: auto;
+    transform: translate(-50%, -50%);
+  }
+
+  /* 디코벳 */
+  .project_overlay_image_3 {
+    position: absolute;
+    top: 53.7%;
+    left: 75.56%;
+    width: 375px;
+    height: auto;
+    transform: translate(-50%, -50%);  
+  }
+
+  /* 공통 확대 효과 */
+  .project_overlay_image_1,
+  .project_overlay_image_2,
+  .project_overlay_image_3 {
+    transition: transform 0.3s ease;
+  }
+
+  .project_overlay_image_1:hover,
+  .project_overlay_image_2:hover,
+  .project_overlay_image_3:hover {
+    transform: translate(-50%, -50%) scale(1.05); /* 원래 위치 유지하면서 살짝 확대 */
+  }

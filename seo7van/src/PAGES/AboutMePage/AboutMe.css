@@ -1,7 +1,6 @@
 /* AboutMe 전체 */
 .aboutme-section {
   position: relative; /* 🔥 기준 영역 지정 */
-  height: 100vh;
   padding: 100px;
   scroll-margin-top: -300px;
 }
@@ -105,3 +104,107 @@
       animation: revealFromLeft 2.5s ease-out forwards;
       animation-delay:2.0s;
     }
+
+    
+@media (max-width: 768px) {
+
+/* 메인 배경 이미지 */
+.AboutMe_main_image {
+  position: relative;
+  margin: auto;
+  display: block;
+  height: 70vh;
+}
+
+/* 메인 글씨 전체 */
+.AboutMe_overlay_text {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+  /* 메인 위 중앙 글씨 */
+    .AboutMe_overlay_image_1 {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    width: 200px;
+    height: auto; /* 세로 비율 유지 */
+    transform: translate(-50%, -50%);
+    z-index: 10;
+  }
+
+  /* 인내와 집념 메인 위 좌측 상단 */
+  .AboutMe_overlay_image_2 {
+    position: absolute;
+    top: 43%;
+    left: 10.85%;
+    width: 510px;
+    height: auto;
+    transform: translate(-50%, -50%);
+  }
+    @keyframes revealFromRight {
+      from { clip-path: inset(0 0 0 100%); }
+      to { clip-path: inset(0 0 0 0); }
+    }
+    .reveal-right-1 {
+      animation: revealFromRight 2.5s ease-out forwards;
+      animation-delay: 0.8s;
+    }
+
+  /* 깔끔은 기본 메인 위 좌측 하단 */
+  .AboutMe_overlay_image_4 {
+    position: absolute;
+    top: 68.6%;
+    left: 10.85%;
+    width: 510px;
+    height: auto;
+    transform: translate(-50%, -50%);  
+  }
+    @keyframes revealFromRight {
+      from { clip-path: inset(0 0 0 100%); }
+      to { clip-path: inset(0 0 0 0); }
+    }
+    .reveal-right-2 {
+      animation: revealFromRight 2.5s ease-out forwards;
+      animation-delay: 1.2s;
+    }
+
+  /* 도전은 재미 메인 위 우측 상단 */
+  .AboutMe_overlay_image_3 {
+    position: absolute;
+    top: 43%;
+    left: 90.1%;
+    width: 510px;
+    height: auto;
+    transform: translate(-50%, -50%);  
+  }
+    @keyframes revealFromLeft {
+      from { clip-path: inset(0 100% 0 0); }
+      to { clip-path: inset(0 0 0 0); }
+    }
+    .reveal-left-1 {
+      animation: revealFromLeft 2.5s ease-out forwards;
+      animation-delay: 1.6s;
+    }
+
+  /* 감각 개발자 메인 위 우측 하단 */
+  .AboutMe_overlay_image_5 {
+    position: absolute;
+    top: 68.6%;
+    left: 90.3%;
+    width: 510px;
+    height: auto;
+    transform: translate(-50%, -50%);  
+  }
+    @keyframes revealFromLeft {
+      from { clip-path: inset(0 100% 0 0); }
+      to { clip-path: inset(0 0 0 0); }
+    }
+    .reveal-left-2 {
+      animation: revealFromLeft 2.5s ease-out forwards;
+      animation-delay:2.0s;
+    }
+}    

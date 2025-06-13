@@ -41,12 +41,13 @@ function Header({ aboutRef }) {
             } else {
               navigate('/', { state: { scrollTo: 'about' } });
             }
-          }}>About ME</div>          
-          <div className="nav-menu-content" onClick={() => { navigate('/Admin/Faq') }} >프로젝트</div>
-          <div className="nav-menu-content" onClick={() => { navigate('/UserSupportList') }} >보유스킬</div>
-          <div className="nav-menu-content" onClick={() => { navigate('/UserSupportList') }} >자기소개서</div>
-          <div className="nav-menu-content" onClick={() => { navigate('/UserSupportList') }} >포트폴리오</div>
+          }}style={{ cursor: 'pointer' }} >About ME</div>          
+          <div className="nav-menu-content" onClick={() => { navigate('/Project') }} style={{ cursor: 'pointer' }} >프로젝트</div>
+          <div className="nav-menu-content" onClick={() => { navigate('/UserSupportList') }} style={{ cursor: 'pointer' }} >보유스킬</div>
+          <div className="nav-menu-content" onClick={() => { navigate('/CoverLetter') }} style={{ cursor: 'pointer' }} >자기소개서</div>
+          <div className="nav-menu-content" onClick={() => { navigate('/PortPoilo') }} style={{ cursor: 'pointer' }} >포트폴리오</div>
         </div>
+        
       </div>
     </header>
   );

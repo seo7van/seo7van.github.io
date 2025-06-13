@@ -22,7 +22,7 @@ const AboutMe = forwardRef((props, ref) => {
     <section className="aboutme-section" ref={ref}>
       
       <img  
-        src="/images/AboutMe_main.png"
+        src="/images/AboutMeImages/AboutMe_main.png"
         className="AboutMe_main_image"
         alt="Main"
       />
@@ -30,31 +30,31 @@ const AboutMe = forwardRef((props, ref) => {
       <div className="AboutMe_overlay_text" ref={containerRef}>
 
         <img  
-          src="/images/네박자 개발자.png"
+          src="/images/AboutMeImages/네박자 개발자.png"
           alt="중간 텍스트" 
           className="AboutMe_overlay_image_1" 
         />
 
         <img  
-          src="/images/인내와 집념.png"
+          src="/images/AboutMeImages/인내와 집념.png"
           alt="부가 텍스트1" 
           className={`AboutMe_overlay_image_2 ${isVisible ? 'reveal-right-1' : ''}`}
         />
 
         <img  
-          src="/images/깔끔은 기본.png"
+          src="/images/AboutMeImages/깔끔은 기본.png"
           alt="부가 텍스트3" 
           className={`AboutMe_overlay_image_4 ${isVisible ? 'reveal-right-2' : ''}`}
         />        
 
         <img  
-          src="/images/도전은 재미.png"
+          src="/images/AboutMeImages/도전은 재미.png"
           alt="부가 텍스트2" 
           className={`AboutMe_overlay_image_3 ${isVisible ? 'reveal-left-1' : ''}`}
         />
 
         <img  
-          src="/images/감각 개발자.png"
+          src="/images/AboutMeImages/감각 개발자.png"
           alt="부가 텍스트4" 
           className={`AboutMe_overlay_image_5 ${isVisible ? 'reveal-left-2' : ''}`}
         />

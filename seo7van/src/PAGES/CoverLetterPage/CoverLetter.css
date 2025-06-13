@@ -1,0 +1,21 @@
+/* 전체 스크롤 스냅 컨테이너 */
+.coverletter-container {
+  width: 100%;
+}
+
+/* 각 페이지 전체화면 */
+.coverletter-page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+}
+
+/* 팝스팟 이미지들 */
+  .coverletter-image {
+  max-height: 120vh;
+  object-fit: contain;
+  border-radius: 8px;
+  margin: 0 0px;
+  }
