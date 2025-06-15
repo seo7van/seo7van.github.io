@@ -1,34 +1,46 @@
+body {
+  overflow-x: hidden;
+}
+
+.header-wrapper {
+  position: relative;
+}
+
 /* 전체 */
 .header-all {
   display:flex; 
+  justify-content: space-between;
   height: 80px;
   top: 0; /* 상단에 고정 */
   position: sticky; /* 스크롤 시에도 고정되도록 설정 */
   z-index: 1000; /* 다른 요소 위에 표시되도록 설정 */
   font-family: 'FontAwesome';
-  justify-content: space-between;
   color: #000000af;
   background-color: white;
+  padding: 0 20px;
+  align-items: center;  
 }
 
 /* 로고 전체 */
 .logo-wrapper {
+  flex: 1;  
   display: flex;
-  position: relative;
   text-align: center;
 }
 
 /* 로고 배경 */
 .logo-background {
-  width: 100%;
+  width: 300px;
   object-fit: cover;
+  margin-left: -55px;
+  margin-top: 0px;
 }
 
 /* 로고 텍스트 */
 .logo-text {
   position: absolute;
-  top: 18%;
-  left: 50%;
+  top: 20px;
+  left: 110px;
   transform: translate(-50%, -50%);
   font-size: 20px;
   color: rgb(0, 0, 0);
@@ -36,19 +48,33 @@
   white-space: nowrap;
 }
 
+/* 햄버거 아이콘 (초기 숨김 → 모바일에서만 보임) */
+.menu-icon {
+  flex: 1;
+  text-align: right;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+
 /* 메뉴 전체 */
 .header-nav-menu {
-  width:auto;
+  flex: 1; /* 가운데로 정렬 쉽게 만들기 위해 */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);  
   display:flex; 
   align-items:center; /* 수직 중앙 정렬 */
+  justify-content: center;  /* 👉 중앙정렬 */
   white-space: nowrap; /* 줄 바꿈 방지*/
   overflow: hidden;
+  position: absolute;
+  
 }
 
 /* 메뉴만 */
 .nav-menu-container {
   display: flex;
-  margin-right: 570px;
 }
 
 /* 메뉴 각각 */
@@ -57,9 +83,53 @@
   font-weight: 500;
   font-size: 15px;
   flex-shrink: 0; /* 줄어들지 않도록 고정 */
+  cursor: pointer; /* 👉 이거 추가 */
 }
   /* 메뉴 호버 */
   .nav-menu-content:hover {
       color: #6841ea;;
       transition: color 0.3s;
   }
+
+
+/* 🟣 반응형 모바일 스타일 적용 */
+@media (max-width: 768px) {
+
+  .menu-icon {
+    display: block;
+  }
+
+  .header-nav-menu {
+    display: none;
+    position: absolute;
+    left: 20%;
+    top: 170%;
+    right: 0;
+    transform: none;
+    flex-direction: column;
+    align-items: center; /* 가운데 정렬 */
+    z-index: 999;
+    align-items: flex-end;
+  }
+
+  .header-nav-menu.open {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .nav-menu-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-menu-content {
+    font-size: 10px;
+    text-align: right;
+    border-radius: 10px;  /* ← 이 한 줄 추가 */
+    background-color: #FA7000;
+    color: #ffffff;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+}

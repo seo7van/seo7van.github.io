@@ -1,3 +1,6 @@
+body {
+  overflow-x: hidden;
+}
 /* 메인 전체 */
 .main_container {
   justify-content: center;
@@ -8,8 +11,8 @@
   position: relative;
   margin: auto;
   display: block;
-  /* width: 81%;
-  height: auto; */
+  width: 81%;
+  /*height: auto; */
 }
   @keyframes slideInLeft {
     from {
@@ -106,34 +109,39 @@
 
 /* 📱 모바일 대응 (반응형 부분 추가) */
 @media (max-width: 768px) {
+  body {
+  overflow-x: hidden;
+}
   .main_image {
-    top: 15%;
-    left: 8.6%;
-    width: 177vw;
-}
-.overlay_text {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none; /* 마우스 안 막게 처리 */
-}
+    position: relative;
+    margin: auto;
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .overlay_text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none; /* 마우스 안 막게 처리 */
+    inset: 0;
+  }
 
   .overlay_image_1 {
-  position: absolute;
-  top: 16.4%;
-  left: 10.6%;
-  width: 100%;
+    position: absolute;
+    top: 16.4%;
+    left: 0%;
+    width: 70%;
   }
 
   .overlay_image_2 {
-  position: absolute;
-  top: 65.3%;
-  left: 17.5%;
-  width: 40%;
-  height: auto;
-
+    position: absolute;
+    top: 70.3%;
+    left: 1%;
+    /* left: 17.5%; */
+    width: 30%;
   }
 
   .social-sidebar {

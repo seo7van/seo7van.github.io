@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 import './App.css';
 import "./index.css";
@@ -16,13 +16,14 @@ import PortPoilo from './PAGES/PortPoiloPage/PortPoilo';
 
 function App() {
   const aboutRef = useRef(null); //ref 생성
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <div className="App">
-      <Header aboutRef={aboutRef} />
-      <div claaName="pages">
+      <Header aboutRef={aboutRef} menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <div className="pages">
         <Routes>
-          <Route path="/" element={<Main aboutRef={aboutRef} />} />
+          <Route path="/" element={<Main aboutRef={aboutRef} menuOpen={menuOpen}/>} />
 
           <Route path="/project" element={<Project />} />
             <Route path="/popspot" element={<PopspotPDF />} />
