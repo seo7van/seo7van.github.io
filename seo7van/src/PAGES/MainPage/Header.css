@@ -15,7 +15,7 @@ body {
   top: 0; /* 상단에 고정 */
   position: sticky; /* 스크롤 시에도 고정되도록 설정 */
   z-index: 1000; /* 다른 요소 위에 표시되도록 설정 */
-  font-family: 'fontawesome-webfont';
+  font-family: 'FontAwesome';
   color: #000000af;
   background-color: white;
   padding: 0 20px;
