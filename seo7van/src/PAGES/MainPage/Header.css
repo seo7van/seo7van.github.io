@@ -108,6 +108,7 @@ body {
     top: 200%;
     right: 0;
     transform: none;
+    font-family: 'FontAwesome';
     flex-direction: column;
     align-items: center; /* 가운데 정렬 */
     z-index: 999;
@@ -147,5 +148,6 @@ body {
     color: #ffffff;
     padding: 12px;
     margin-bottom: 10px;
+    font-weight: bold;
   }
 }
