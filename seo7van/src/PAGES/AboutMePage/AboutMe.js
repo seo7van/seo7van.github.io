@@ -38,25 +38,25 @@ const AboutMe = forwardRef((props, ref) => {
         <img  
           src="/images/AboutMeImages/인내와 집념.png"
           alt="부가 텍스트1" 
-          className={`AboutMe_overlay_image_2 ${isVisible ? 'reveal-right-1' : ''}`}
+          className={`AboutMe_overlay_image_2 ${isVisible ? 'fade-in-1' : ''}`}
         />
 
         <img  
           src="/images/AboutMeImages/깔끔은 기본.png"
           alt="부가 텍스트3" 
-          className={`AboutMe_overlay_image_4 ${isVisible ? 'reveal-right-2' : ''}`}
+          className={`AboutMe_overlay_image_4 ${isVisible ? 'fade-in-2' : ''}`}
         />        
 
         <img  
           src="/images/AboutMeImages/도전은 재미.png"
           alt="부가 텍스트2" 
-          className={`AboutMe_overlay_image_3 ${isVisible ? 'reveal-left-1' : ''}`}
+          className={`AboutMe_overlay_image_3 ${isVisible ? 'fade-in-3' : ''}`}
         />
 
         <img  
           src="/images/AboutMeImages/감각 개발자.png"
           alt="부가 텍스트4" 
-          className={`AboutMe_overlay_image_5 ${isVisible ? 'reveal-left-2' : ''}`}
+          className={`AboutMe_overlay_image_5 ${isVisible ? 'fade-in-4' : ''}`}
         />
         
       </div>        

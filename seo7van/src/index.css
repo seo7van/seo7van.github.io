@@ -1,12 +1,5 @@
 body {
-  font-family: 'FontAwesome'; /* 기본 폰트 설정 */
-  font-weight: 00;
-  margin: 0;
-}
-
-@font-face {
-  font-family: 'FontAwesome';
-  src: url('/public/fonts/fontawesome-webfont.ttf') format('truetype');
+  font-family: 'fontawesome-webfont'; /* 기본 폰트 설정 */
   font-weight: normal;
-  font-style: normal;
+  margin: 0;
 }

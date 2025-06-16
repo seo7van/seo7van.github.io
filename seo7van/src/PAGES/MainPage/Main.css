@@ -112,11 +112,18 @@ body {
   body {
   overflow-x: hidden;
 }
+
+  .main_container {
+    height: 100vh; /* 뷰포트 전체 높이만큼 채우기 */
+  }
+
   .main_image {
     position: relative;
+    top : -6%;
+    right: 120%;
     margin: auto;
     display: block;
-    width: 100%;
+    width: 230%;
     height: auto;
   }
 
@@ -131,16 +138,15 @@ body {
 
   .overlay_image_1 {
     position: absolute;
-    top: 16.4%;
+    top: 50%;
     left: 0%;
     width: 70%;
   }
 
   .overlay_image_2 {
     position: absolute;
-    top: 70.3%;
-    left: 1%;
-    /* left: 17.5%; */
+    top: 60.3%;
+    left: 1.8%;
     width: 30%;
   }
 

@@ -14,7 +14,7 @@ body {
   top: 0; /* 상단에 고정 */
   position: sticky; /* 스크롤 시에도 고정되도록 설정 */
   z-index: 1000; /* 다른 요소 위에 표시되도록 설정 */
-  font-family: 'FontAwesome';
+  font-family: 'fontawesome-webfont';
   color: #000000af;
   background-color: white;
   padding: 0 20px;
@@ -92,7 +92,7 @@ body {
   }
 
 
-/* 🟣 반응형 모바일 스타일 적용 */
+/* 반응형 모바일 스타일 적용 */
 @media (max-width: 768px) {
 
   .menu-icon {
@@ -103,7 +103,7 @@ body {
     display: none;
     position: absolute;
     left: 20%;
-    top: 170%;
+    top: 200%;
     right: 0;
     transform: none;
     flex-direction: column;
@@ -111,10 +111,20 @@ body {
     z-index: 999;
     align-items: flex-end;
   }
-
+    @keyframes slideInRightMenu {
+      from {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
   .header-nav-menu.open {
     display: flex;
     align-items: flex-start;
+    animation: slideInRightMenu 1.0s ease forwards;
   }
 
   .nav-menu-container {
@@ -124,12 +134,12 @@ body {
   }
 
   .nav-menu-content {
-    font-size: 10px;
+    font-size: 13px;
     text-align: right;
     border-radius: 10px;  /* ← 이 한 줄 추가 */
     background-color: #FA7000;
     color: #ffffff;
-    padding: 10px;
+    padding: 12px;
     margin-bottom: 10px;
   }
 }

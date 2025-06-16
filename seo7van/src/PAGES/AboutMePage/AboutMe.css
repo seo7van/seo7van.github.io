@@ -1,6 +1,17 @@
 body {
   overflow-x: hidden;
 }
+
+  /* 점차 밝게 등장 */
+  @keyframes fadeInOnly {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
 /* AboutMe 전체 */
 .aboutme-section {
   position: relative; /* 🔥 기준 영역 지정 */
@@ -44,15 +55,13 @@ body {
     width: 727px;
     height: auto;
     transform: translate(-50%, -50%);
+    opacity: 0;
   }
-    @keyframes revealFromRight {
-      from { clip-path: inset(0 0 0 100%); }
-      to { clip-path: inset(0 0 0 0); }
+    .fade-in-1 {
+      animation: fadeInOnly 2s ease forwards;
+      animation-delay: 1s;
     }
-    .reveal-right-1 {
-      animation: revealFromRight 2.5s ease-out forwards;
-      animation-delay: 0.8s;
-    }
+    
 
   /* 깔끔은 기본 메인 위 좌측 하단 */
   .AboutMe_overlay_image_4 {
@@ -62,15 +71,13 @@ body {
     width: 727px;
     height: auto;
     transform: translate(-50%, -50%);  
+    opacity: 0;
   }
-    @keyframes revealFromRight {
-      from { clip-path: inset(0 0 0 100%); }
-      to { clip-path: inset(0 0 0 0); }
+    .fade-in-2 {
+      animation: fadeInOnly 2s ease forwards;
+      animation-delay: 2s;
     }
-    .reveal-right-2 {
-      animation: revealFromRight 2.5s ease-out forwards;
-      animation-delay: 1.2s;
-    }
+
 
   /* 도전은 재미 메인 위 우측 상단 */
   .AboutMe_overlay_image_3 {
@@ -80,14 +87,11 @@ body {
     width: 727px;
     height: auto;
     transform: translate(-50%, -50%);  
+    opacity: 0;
   }
-    @keyframes revealFromLeft {
-      from { clip-path: inset(0 100% 0 0); }
-      to { clip-path: inset(0 0 0 0); }
-    }
-    .reveal-left-1 {
-      animation: revealFromLeft 2.5s ease-out forwards;
-      animation-delay: 1.6s;
+    .fade-in-3 {
+      animation: fadeInOnly 2s ease forwards;
+      animation-delay: 3s;
     }
 
   /* 감각 개발자 메인 위 우측 하단 */
@@ -98,19 +102,23 @@ body {
     width: 727px;
     height: auto;
     transform: translate(-50%, -50%);  
+    opacity: 0;
   }
-    @keyframes revealFromLeft {
-      from { clip-path: inset(0 100% 0 0); }
-      to { clip-path: inset(0 0 0 0); }
-    }
-    .reveal-left-2 {
-      animation: revealFromLeft 2.5s ease-out forwards;
-      animation-delay:2.0s;
+    .fade-in-4 {
+      animation: fadeInOnly 2s ease forwards;
+      animation-delay: 4s;
     }
 
 
 @media (max-width: 768px) {
 
+/* AboutMe 전체 */
+.aboutme-section {
+  position: relative; /* 🔥 기준 영역 지정 */
+  height: 100vh;  /* 뷰포트 높이만큼 꽉 채우기 */
+  margin-top: 10px;
+}
+  
 /* 메인 배경 이미지 */
 .AboutMe_main_image {
   position: relative;
@@ -118,7 +126,6 @@ body {
   display: block;
   width: 100%;
   margin-top: 20px;
-  margin-bottom: 50px;
 }
 
 /* 메인 글씨 전체 */
@@ -129,7 +136,7 @@ body {
   /* 메인 위 중앙 글씨 */
     .AboutMe_overlay_image_1 {
     position: absolute;
-    top: 58.5%;
+    top: 50.5%;
     left: 50%;
     width: 17%;
     height: auto; /* 세로 비율 유지 */
@@ -140,72 +147,60 @@ body {
   /* 인내와 집념 메인 위 좌측 상단 */
   .AboutMe_overlay_image_2 {
     position: absolute;
-    top: 43.6%;
-    left: 27.1%;
-    width: 45.4%;
+    top: 20.6%;
+    left: 60.7%;
+    width: 70%;
     height: auto;
     transform: translate(-50%, -50%);
+    opacity: 0;
   }
-    @keyframes revealFromRight {
-      from { clip-path: inset(0 0 0 100%); }
-      to { clip-path: inset(0 0 0 0); }
-    }
-    .reveal-right-1 {
-      animation: revealFromRight 2.5s ease-out forwards;
-      animation-delay: 0.8s;
-    }
-
-  /* 깔끔은 기본 메인 위 좌측 하단 */
-  .AboutMe_overlay_image_4 {
-    position: absolute;
-    top: 76.2%;
-    left: 27.1%;
-    width: 45.4%;
-    height: auto;
-    transform: translate(-50%, -50%);  
-  }
-    @keyframes revealFromRight {
-      from { clip-path: inset(0 0 0 100%); }
-      to { clip-path: inset(0 0 0 0); }
-    }
-    .reveal-right-2 {
-      animation: revealFromRight 2.5s ease-out forwards;
-      animation-delay: 1.2s;
+    .fade-in-1 {
+      animation: fadeInOnly 2s ease forwards;
+      animation-delay: 1s;
     }
 
   /* 도전은 재미 메인 위 우측 상단 */
   .AboutMe_overlay_image_3 {
     position: absolute;
-    top: 43.6%;
-    left: 72.7%;
-    width: 45.4%;
+    top: 40.6%;
+    left: 40.1%;
+    width: 70%;
     height: auto;
     transform: translate(-50%, -50%);  
+    opacity: 0; 
   }
-    @keyframes revealFromLeft {
-      from { clip-path: inset(0 100% 0 0); }
-      to { clip-path: inset(0 0 0 0); }
-    }
-    .reveal-left-1 {
-      animation: revealFromLeft 2.5s ease-out forwards;
-      animation-delay: 1.6s;
+    .fade-in-3 {
+      animation: fadeInOnly 2s ease forwards;
+      animation-delay: 2s;
+    }    
+
+  /* 깔끔은 기본 메인 위 좌측 하단 */
+  .AboutMe_overlay_image_4 {
+    position: absolute;
+    top: 60.6%;
+    left: 60.7%;
+    width: 70%;
+    height: auto;
+    transform: translate(-50%, -50%);  
+    opacity: 0;
+  }
+    .fade-in-2 {
+      animation: fadeInOnly 2s ease forwards;
+      animation-delay: 3s;
     }
 
   /* 감각 개발자 메인 위 우측 하단 */
   .AboutMe_overlay_image_5 {
     position: absolute;
-    top: 76.2%;
-    left: 72.9%;
-    width: 45.4%;
+    top: 80.6%;
+    left: 40.1%;
+    width: 70%;
     height: auto;
     transform: translate(-50%, -50%);  
+    opacity: 0;
   }
-    @keyframes revealFromLeft {
-      from { clip-path: inset(0 100% 0 0); }
-      to { clip-path: inset(0 0 0 0); }
-    }
-    .reveal-left-2 {
-      animation: revealFromLeft 2.5s ease-out forwards;
-      animation-delay:2.0s;
+    .fade-in-4 {
+      animation: fadeInOnly 2s ease forwards;
+      animation-delay: 4s;
     }
 }    
