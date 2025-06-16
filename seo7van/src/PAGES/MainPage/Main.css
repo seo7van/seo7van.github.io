@@ -118,14 +118,13 @@ body {
   
   /* 메인 전체 */
   .main_container {
-    height: auto;
+    height: 88vh;
   }
 
   /* 메인 배경 이미지 */
   .main_image {
     position: relative;
-    height: 100vh;
-    top : 12.9%;
+    top : 18%;
     right: 130.5%;
     margin: auto;
     display: block;
