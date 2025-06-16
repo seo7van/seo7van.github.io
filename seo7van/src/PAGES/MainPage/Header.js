@@ -39,7 +39,7 @@ function Header({ aboutRef, menuOpen, setMenuOpen }) {
             onClick={handleLogoClick}
             style={{ cursor: 'pointer' }}
           >
-            Hello SEOJIN World!
+            HELLO SEOJIN WORLD!
           </p>
         </div>
      
