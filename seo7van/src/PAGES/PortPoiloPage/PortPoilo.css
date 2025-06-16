@@ -11,6 +11,7 @@
   max-width: 1500px; /* 최대 가로 길이 */
   width: 90%; /* 화면 작을 때 유동적으로 */
   height: 844px;
+  aspect-ratio: 16 / 9;
 }
 
 /* 포트폴리오 이미지 전체 */
@@ -30,3 +31,10 @@
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
+
+  @media (max-width: 768px) {
+    .portpoilo_video {
+      margin-top: 10%;      
+      height: auto;
+    }
+  }      

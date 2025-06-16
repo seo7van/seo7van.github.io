@@ -12,10 +12,26 @@
   scroll-snap-align: start;
 }
 
-/* 팝스팟 이미지들 */
+/* 이미지들 */
   .coverletter-image {
   max-height: 120vh;
   object-fit: contain;
   border-radius: 8px;
   margin: 0 0px;
   }
+
+  /* 모바일 반응형 추가 */
+  @media (max-width: 768px) {
+    
+  .coverletter-page {
+    display: block;
+    margin-top: 10%; 
+  }
+
+    .coverletter-image {
+      display: block;
+      width: 90%;  /* 이미지 크기 조절 */
+      max-height: none;
+      margin: 20px auto;  /* 이미지끼리 간격 */
+    }
+  }  
