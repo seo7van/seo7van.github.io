@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('/fonts/fontawesome-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gong Gothic Bold';
+  src: url('/fonts/GongGothicBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
