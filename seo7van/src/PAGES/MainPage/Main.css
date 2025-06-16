@@ -115,16 +115,13 @@ body {
   overflow-x: hidden;
 }
   
-  /* 메인 전체 */
-  .main_container {
-    height: 100vh; /* 뷰포트 전체 높이만큼 채우기 */
-  }
+
 
   /* 메인 배경 이미지 */
   .main_image {
     position: relative;
-    top : -6%;
-    right: 130%;
+    top : 12.9%;
+    right: 130.5%;
     margin: auto;
     display: block;
     width: 230%;
@@ -144,15 +141,15 @@ body {
   /* 메인 위 큰 글씨*/
   .overlay_image_1 {
     position: absolute;
-    top: 45%;
+    top: 10%;
     left: 0%;
-    width: 70%;
+    width: 100%;
   }
  
   /* 메인 위 작은 글씨*/
   .overlay_image_2 {
     position: absolute;
-    top: 60.3%;
+    top: 45.3%;
     left: 1.8%;
     width: 30%;
   }
