@@ -111,15 +111,20 @@ body {
 
 /* 📱 모바일 대응 (반응형 부분 추가) */
 @media (max-width: 768px) {
-  body {
-  overflow-x: hidden;
-}
   
-
+  body {
+    overflow-x: hidden;
+  }
+  
+  /* 메인 전체 */
+  .main_container {
+    height: auto;
+  }
 
   /* 메인 배경 이미지 */
   .main_image {
     position: relative;
+    height: 100vh;
     top : 12.9%;
     right: 130.5%;
     margin: auto;
