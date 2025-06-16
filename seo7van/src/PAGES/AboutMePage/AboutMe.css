@@ -112,95 +112,95 @@ body {
 
 @media (max-width: 768px) {
 
-/* AboutMe 전체 */
-.aboutme-section {
-  position: relative; /* 🔥 기준 영역 지정 */
-  height: 100vh;  /* 뷰포트 높이만큼 꽉 채우기 */
-  margin-top: 10px;
-}
+  /* AboutMe 전체 */
+  .aboutme-section {
+    position: relative; /* 🔥 기준 영역 지정 */
+    height: 100vh;  /* 뷰포트 높이만큼 꽉 채우기 */
+    margin-top: 10px;
+  }
   
-/* 메인 배경 이미지 */
-.AboutMe_main_image {
-  position: relative;
-  margin: auto;
-  display: block;
-  width: 100%;
-  margin-top: 20px;
-}
-
-/* 메인 글씨 전체 */
-.AboutMe_overlay_text {
-  position: absolute;
-}
-
-  /* 메인 위 중앙 글씨 */
-    .AboutMe_overlay_image_1 {
-    position: absolute;
-    top: 50.5%;
-    left: 50%;
-    width: 17%;
-    height: auto; /* 세로 비율 유지 */
-    transform: translate(-50%, -50%);
-    z-index: 10;
+  /* 메인 배경 이미지 */
+  .AboutMe_main_image {
+    position: relative;
+    margin: auto;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
   }
 
-  /* 인내와 집념 메인 위 좌측 상단 */
-  .AboutMe_overlay_image_2 {
+  /* 메인 글씨 전체 */
+  .AboutMe_overlay_text {
     position: absolute;
-    top: 20.6%;
-    left: 60.7%;
-    width: 70%;
-    height: auto;
-    transform: translate(-50%, -50%);
-    opacity: 0;
   }
-    .fade-in-1 {
-      animation: fadeInOnly 2s ease forwards;
-      animation-delay: 1s;
+
+    /* 메인 위 중앙 글씨 */
+      .AboutMe_overlay_image_1 {
+      position: absolute;
+      top: 50.5%;
+      left: 50%;
+      width: 17%;
+      height: auto; /* 세로 비율 유지 */
+      transform: translate(-50%, -50%);
+      z-index: 10;
     }
 
-  /* 도전은 재미 메인 위 우측 상단 */
-  .AboutMe_overlay_image_3 {
-    position: absolute;
-    top: 40.6%;
-    left: 40.1%;
-    width: 70%;
-    height: auto;
-    transform: translate(-50%, -50%);  
-    opacity: 0; 
-  }
-    .fade-in-3 {
-      animation: fadeInOnly 2s ease forwards;
-      animation-delay: 2s;
-    }    
-
-  /* 깔끔은 기본 메인 위 좌측 하단 */
-  .AboutMe_overlay_image_4 {
-    position: absolute;
-    top: 60.6%;
-    left: 60.7%;
-    width: 70%;
-    height: auto;
-    transform: translate(-50%, -50%);  
-    opacity: 0;
-  }
-    .fade-in-2 {
-      animation: fadeInOnly 2s ease forwards;
-      animation-delay: 3s;
+    /* 인내와 집념 */
+    .AboutMe_overlay_image_2 {
+      position: absolute;
+      top: 20.6%;
+      left: 60.7%;
+      width: 70%;
+      height: auto;
+      transform: translate(-50%, -50%);
+      opacity: 0;
     }
+      .fade-in-1 {
+        animation: fadeInOnly 2s ease forwards;
+        animation-delay: 1s;
+      }
 
-  /* 감각 개발자 메인 위 우측 하단 */
-  .AboutMe_overlay_image_5 {
-    position: absolute;
-    top: 80.6%;
-    left: 40.1%;
-    width: 70%;
-    height: auto;
-    transform: translate(-50%, -50%);  
-    opacity: 0;
-  }
-    .fade-in-4 {
-      animation: fadeInOnly 2s ease forwards;
-      animation-delay: 4s;
+    /* 도전은 재미 */
+    .AboutMe_overlay_image_3 {
+      position: absolute;
+      top: 40.6%;
+      left: 40.1%;
+      width: 70%;
+      height: auto;
+      transform: translate(-50%, -50%);  
+      opacity: 0; 
     }
+      .fade-in-3 {
+        animation: fadeInOnly 2s ease forwards;
+        animation-delay: 2s;
+      }    
+
+    /* 깔끔은 기본 */
+    .AboutMe_overlay_image_4 {
+      position: absolute;
+      top: 60.6%;
+      left: 60.7%;
+      width: 70%;
+      height: auto;
+      transform: translate(-50%, -50%);  
+      opacity: 0;
+    }
+      .fade-in-2 {
+        animation: fadeInOnly 2s ease forwards;
+        animation-delay: 3s;
+      }
+
+    /* 감각 개발자 */
+    .AboutMe_overlay_image_5 {
+      position: absolute;
+      top: 80.6%;
+      left: 40.1%;
+      width: 70%;
+      height: auto;
+      transform: translate(-50%, -50%);  
+      opacity: 0;
+    }
+      .fade-in-4 {
+        animation: fadeInOnly 2s ease forwards;
+        animation-delay: 4s;
+      }
 }    

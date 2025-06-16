@@ -13,21 +13,21 @@
 }
 
   /* 팟스팟 */
-    .project_overlay_image_1 {
+  .project_overlay_image_1 {
     position: absolute;
-    top: 53.7%;
-    left: 24.5%;
-    width: 375px;
+    top: 55.1%;
+    left: 24.6%;
+    width: 19.65%;
     height: auto; /* 세로 비율 유지 */
     transform: translate(-50%, -50%);
-  }
+    }
 
   /* 메디파스 */
   .project_overlay_image_2 {
     position: absolute;
-    top: 53.7%;
+    top: 55.1%;
     left: 50%;
-    width: 375px;
+    width: 19.65%;
     height: auto;
     transform: translate(-50%, -50%);
   }
@@ -35,9 +35,9 @@
   /* 디코벳 */
   .project_overlay_image_3 {
     position: absolute;
-    top: 53.7%;
-    left: 75.56%;
-    width: 375px;
+    top: 55%;
+    left: 75.42%;
+    width: 19.65%;
     height: auto;
     transform: translate(-50%, -50%);  
   }
@@ -54,3 +54,48 @@
   .project_overlay_image_3:hover {
     transform: translate(-50%, -50%) scale(1.05); /* 원래 위치 유지하면서 살짝 확대 */
   }
+
+/* 📱 모바일 전용 스타일 */
+@media (max-width: 768px) {
+  /* AboutMe 전체 */
+  .project-section {
+    height: 100vh;
+    position: relative;
+  }
+
+  /* 메인 배경 이미지 */
+  .project_main_image {
+    width: 100%;
+    height: auto;
+  }
+
+  /* 모바일에서는 세로로 아이콘 정렬 */
+  .project_overlay_images {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .project_overlay_image_1,
+  .project_overlay_image_2,
+  .project_overlay_image_3 {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 60%;
+    height: auto;
+    transform: none;
+  }
+
+  /* 모바일 hover 효과 제거 (터치니까) */
+  .project_overlay_image_1:hover,
+  .project_overlay_image_2:hover,
+  .project_overlay_image_3:hover {
+    transform: none;
+  }
+}  

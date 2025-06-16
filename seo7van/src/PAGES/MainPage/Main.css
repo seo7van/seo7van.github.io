@@ -1,6 +1,29 @@
 body {
   overflow-x: hidden;
 }
+
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideInRight {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
 /* 메인 전체 */
 .main_container {
   justify-content: center;
@@ -12,18 +35,7 @@ body {
   margin: auto;
   display: block;
   width: 81%;
-  /*height: auto; */
 }
-  @keyframes slideInLeft {
-    from {
-      transform: translateX(100%);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
   .main_image.animate {
     animation: slideInLeft 1s ease-out forwards;
   }
@@ -47,7 +59,7 @@ body {
   height: auto; /* 세로 비율 유지 */
   }
 
-/* 메인 위 큰 글씨*/
+/* 메인 위 작은 글씨*/
 .overlay_image_2 {
   position: absolute;
   top: 79.3%;
@@ -55,22 +67,12 @@ body {
   width: 15.4vw;
   height: auto;
 }
-  @keyframes slideInRight {
-    from {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
   .overlay_image_1.animate,
   .overlay_image_2.animate {
     animation: slideInRight 1s ease-out forwards;
   }
 
-  /* 깃허브 로고 */
+/* 깃허브 로고 */
 .social-sidebar {
   position: fixed;
   top: 85%;
@@ -112,21 +114,24 @@ body {
   body {
   overflow-x: hidden;
 }
-
+  
+  /* 메인 전체 */
   .main_container {
     height: 100vh; /* 뷰포트 전체 높이만큼 채우기 */
   }
 
+  /* 메인 배경 이미지 */
   .main_image {
     position: relative;
     top : -6%;
-    right: 120%;
+    right: 130%;
     margin: auto;
     display: block;
     width: 230%;
     height: auto;
   }
 
+  /* 메인 글씨 */
   .overlay_text {
     position: absolute;
     top: 0;
@@ -136,13 +141,15 @@ body {
     inset: 0;
   }
 
+  /* 메인 위 큰 글씨*/
   .overlay_image_1 {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 0%;
     width: 70%;
   }
-
+ 
+  /* 메인 위 작은 글씨*/
   .overlay_image_2 {
     position: absolute;
     top: 60.3%;
@@ -150,6 +157,7 @@ body {
     width: 30%;
   }
 
+  /* 깃허브 로고 */
   .social-sidebar {
     right: 50px;
   }
@@ -159,6 +167,7 @@ body {
     height: 30px;
   }
 
+  /* 맨위로 올리는 스크롤 아이콘 */
   .scroll-top {
     width: 40px;
     height: 40px;

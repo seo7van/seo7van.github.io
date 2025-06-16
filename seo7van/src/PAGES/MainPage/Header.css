@@ -2,6 +2,7 @@ body {
   overflow-x: hidden;
 }
 
+/* 전체보다 위 */
 .header-wrapper {
   position: relative;
 }
@@ -69,7 +70,6 @@ body {
   white-space: nowrap; /* 줄 바꿈 방지*/
   overflow: hidden;
   position: absolute;
-  
 }
 
 /* 메뉴만 */
@@ -94,11 +94,13 @@ body {
 
 /* 반응형 모바일 스타일 적용 */
 @media (max-width: 768px) {
-
+  
+  /* 햄버거 아이콘 */
   .menu-icon {
     display: block;
   }
 
+  /* 메뉴 전체 */
   .header-nav-menu {
     display: none;
     position: absolute;
@@ -121,18 +123,22 @@ body {
         opacity: 1;
       }
     }
+
+  /* 오픈 했을때 */
   .header-nav-menu.open {
     display: flex;
     align-items: flex-start;
     animation: slideInRightMenu 1.0s ease forwards;
   }
 
+  /* 메뉴보다 한단계 아래 전체 */
   .nav-menu-container {
     align-items: center;
     display: flex;
     flex-direction: column;
   }
-
+  
+  /* 메뉴 각각 */
   .nav-menu-content {
     font-size: 13px;
     text-align: right;

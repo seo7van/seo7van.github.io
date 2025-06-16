@@ -10,7 +10,7 @@ function Project() {
     <section className="project-section" >
 
         <img  
-          src="/images/ProjectImages/프로젝트1.png"
+          src="/images/ProjectImages/프로젝트.png"
           className="project_main_image" 
           alt="Main"
         />
