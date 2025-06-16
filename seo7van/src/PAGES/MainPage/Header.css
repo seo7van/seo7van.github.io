@@ -124,6 +124,10 @@ body {
         opacity: 1;
       }
     }
+    
+  .logo-text {
+    font-weight: bold;
+  }  
 
   /* 오픈 했을때 */
   .header-nav-menu.open {
@@ -148,6 +152,5 @@ body {
     color: #ffffff;
     padding: 12px;
     margin-bottom: 10px;
-    font-weight: bold;
   }
 }
