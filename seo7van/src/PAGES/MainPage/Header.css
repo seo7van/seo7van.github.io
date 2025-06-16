@@ -116,9 +116,10 @@ body {
     font-family: 'Freesentation', sans-serif;
     flex-direction: row;
     align-items: center; /* 가운데 정렬 */
-    
+    overflow-x: auto;
     width: 100%;
     z-index: 999;
+    white-space: nowrap;
   }
     @keyframes slideInRightMenu {
       from {
@@ -145,5 +146,6 @@ body {
     color: #ffffff;
     padding: 10px;
     margin: 0 8px;
+    font-weight: 800;
   }
 }
