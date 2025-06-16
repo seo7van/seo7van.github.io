@@ -15,7 +15,7 @@ body {
   top: 0; /* 상단에 고정 */
   position: sticky; /* 스크롤 시에도 고정되도록 설정 */
   z-index: 1000; /* 다른 요소 위에 표시되도록 설정 */
-  font-family: 'FontAwesome';
+  font-family: 'Freesentation', sans-serif;
   color: #000000af;
   background-color: white;
   padding: 0 20px;
@@ -45,7 +45,7 @@ body {
   transform: translate(-50%, -50%);
   font-size: 20px;
   color: rgb(0, 0, 0);
-  font-weight: bold;
+  font-weight: 800;
   white-space: nowrap;
 }
 
@@ -70,6 +70,7 @@ body {
   white-space: nowrap; /* 줄 바꿈 방지*/
   overflow: hidden;
   position: absolute;
+  font-weight: 800;
 }
 
 /* 메뉴만 */
@@ -94,40 +95,39 @@ body {
 
 /* 반응형 모바일 스타일 적용 */
 @media (max-width: 768px) {
-  
+
   /* 햄버거 아이콘 */
   .menu-icon {
     display: block;
   }
+  /* 로고 부분 */
+  .logo-text {
+    font-family: 'Freesentation', sans-serif; /* ✅ 폰트 적용 */
+    font-weight: 700;
+  }  
 
   /* 메뉴 전체 */
   .header-nav-menu {
     display: none;
     position: absolute;
-    left: 20%;
-    top: 200%;
-    right: 0;
-    transform: none;
-    font-family: 'FontAwesome';
-    flex-direction: column;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Freesentation', sans-serif;
+    flex-direction: row;
     align-items: center; /* 가운데 정렬 */
+    
+    width: 100%;
     z-index: 999;
-    align-items: flex-end;
   }
     @keyframes slideInRightMenu {
       from {
-        transform: translateX(-100%);
         opacity: 0;
       }
       to {
-        transform: translateX(0);
         opacity: 1;
       }
     }
-    
-  .logo-text {
-    font-weight: bold;
-  }  
 
   /* 오픈 했을때 */
   .header-nav-menu.open {
@@ -135,22 +135,15 @@ body {
     align-items: flex-start;
     animation: slideInRightMenu 1.0s ease forwards;
   }
-
-  /* 메뉴보다 한단계 아래 전체 */
-  .nav-menu-container {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-  }
   
   /* 메뉴 각각 */
   .nav-menu-content {
     font-size: 13px;
-    text-align: right;
+    text-align: center;
     border-radius: 10px;  /* ← 이 한 줄 추가 */
     background-color: #FA7000;
     color: #ffffff;
-    padding: 12px;
-    margin-bottom: 10px;
+    padding: 10px;
+    margin: 0 8px;
   }
 }
