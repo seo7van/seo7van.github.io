@@ -124,7 +124,7 @@ body {
   /* 메인 배경 이미지 */
   .main_image {
     position: relative;
-    top : 18%;
+    top : 12.2%;
     right: 130.5%;
     margin: auto;
     display: block;
@@ -145,16 +145,16 @@ body {
   /* 메인 위 큰 글씨*/
   .overlay_image_1 {
     position: absolute;
-    top: 10%;
+    top: 5%;
     left: 0%;
-    width: 100%;
+    width: 90%;
   }
  
   /* 메인 위 작은 글씨*/
   .overlay_image_2 {
     position: absolute;
-    top: 45.3%;
-    left: 1.8%;
+    top: 20%;
+    left: 1.9%;
     width: 30%;
   }
 
