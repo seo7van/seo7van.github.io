@@ -191,7 +191,7 @@ position: absolute;
     .frontend-section {
       position: absolute;
       width: 40%;
-      top: 61.6%;
+      top: 64.6%;
       left: 26.5%;
       transform: translate(-50%, -50%);
       display: flex;
@@ -203,7 +203,7 @@ position: absolute;
   /* 데이터베이스 제목 */
   .datevase_image {
     position: absolute;
-    top: 70%;
+    top: 71%;
     left: 25.8%;
     width: 48.4%;
     transform: translate(-50%, -50%); 
@@ -212,7 +212,7 @@ position: absolute;
     .datevase-section {
       position: absolute;
       width: 40%;
-      top: 73%;
+      top: 73.5%;
       left: 26.5%;
       transform: translate(-50%, -50%);
       display: flex;
@@ -232,9 +232,9 @@ position: absolute;
     /* ETC 전체 */
     .etc-section {
       position: absolute;
-      width: 40%;
-      top: 79.5%;
-      left: 26.5%;
+      width: 43%;
+      top: 83%;
+      left: 28%;
       transform: translate(-50%, -50%);
       display: flex;
       flex-wrap: wrap;
@@ -253,8 +253,8 @@ position: absolute;
     /* 백엔드 전체 */
     .backend-section {
       position: absolute;
-      width: 39%;
-      top: 61.6%;
+      width: 37%;
+      top: 67.1%;
       left: 72%;
       transform: translate(-50%, -50%);
       display: flex;
@@ -266,7 +266,7 @@ position: absolute;
   /* 그외 스킬 */
   .but_skill_image {
     position: absolute;
-    top: 81.7%;
+    top: 81.9%;
     left: 73.9%;
     width: 48%;
     transform: translate(-50%, -50%); 
@@ -277,7 +277,7 @@ position: absolute;
   flex-wrap: wrap;
   justify-content: flex-start;
   gap: 4px;
-  max-height: 25px;
+  max-height: 19px;
 }
 
  .skill-items img {

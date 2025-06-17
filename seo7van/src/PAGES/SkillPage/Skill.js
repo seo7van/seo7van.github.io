@@ -59,7 +59,7 @@ const Skill = () => {
       alt="ETC 제목"
       />  
 
-    <div className="backend-section skill-items">
+    <div className="backend-section">
       <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white" className="skill-items" alt="Java" />
       <img src="https://img.shields.io/badge/SpringBoot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" className="skill-items" alt="SpringBoot" />
       <img src="https://img.shields.io/badge/SpringSecurity-6DB33F?style=for-the-badge&logo=springsecurity&logoColor=white" className="skill-items" alt="SpringSecurity" />
@@ -69,7 +69,7 @@ const Skill = () => {
       <img src="https://img.shields.io/badge/Redis-%23DC382D.svg?&style=for-the-badge&logo=redis&logoColor=white" className="skill-items" alt="Redis" />
     </div>
 
-    <div className="frontend-section skill-items">
+    <div className="frontend-section">
       <img src="https://img.shields.io/badge/react-%2361DAFB.svg?&style=for-the-badge&logo=react&logoColor=black" className="skill-items" alt="React" />
       <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=HTML5&logoColor=white" className="skill-items" alt="HTML5" />
       <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=CSS3&logoColor=white" className="skill-items" alt="CSS3" />
@@ -78,14 +78,14 @@ const Skill = () => {
       <img src="https://img.shields.io/badge/bootstrap-%237952B3.svg?&style=for-the-badge&logo=bootstrap&logoColor=white" className="skill-items" alt="Bootstrap" />
     </div>
 
-    <div className="datevase-section skill-items">
+    <div className="datevase-section">
       <img src="https://img.shields.io/badge/Oracle%20SQL-F80000?style=for-the-badge&logo=Oracle&logoColor=white" className="skill-items" alt="Oracle SQL" />
       <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=MySQL&logoColor=white" className="skill-items" alt="MySQL" />
     </div>
 
 
 
-    <div className="etc-section skill-items">
+    <div className="etc-section">
       <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" className="skill-items" alt="GitHub Actions" />
       <img src="https://img.shields.io/badge/git-%23F05032.svg?&style=for-the-badge&logo=git&logoColor=white" className="skill-items" alt="Git" />
       <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=GitHub&logoColor=white" className="skill-items" alt="GitHub" />
