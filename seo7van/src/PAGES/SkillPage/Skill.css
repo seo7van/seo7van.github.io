@@ -173,8 +173,8 @@ position: absolute;
   /* 이력 */
   .Activities_Awards_image {
     position: absolute;
-    top: 49.9%;
-    left: 76%;
+    top: 49.8%;
+    left: 75%;
     width: 50%;
     transform: translate(-50%, -50%); 
   }
@@ -182,18 +182,22 @@ position: absolute;
   /* 프론트엔드 제목 */
   .frontend_image {
     position: absolute;
-    top: 60%;
+    top: 58.5%;
     left: 25.8%;
-    width: 50%;
+    width: 48.4%;
     transform: translate(-50%, -50%); 
   }
     /* 프론트엔드 전체 */
     .frontend-section {
       position: absolute;
-      width: 65%;
+      width: 50%;
       top: 64%;
-      left: 35.5%;
-      transform: translate(-50%, -50%); 
+      left: 30.5%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      justify-content: flex-start; 
     }
 
   /* 데이터베이스 제목 */
@@ -201,16 +205,20 @@ position: absolute;
     position: absolute;
     top: 70%;
     left: 25.8%;
-    width: 50%;
+    width: 48.4%;
     transform: translate(-50%, -50%); 
   }
     /* 데이터베이스 전체 */
     .datevase-section {
       position: absolute;
-      width: 65%;
-      top: 72.5%;
-      left: 35.5%;
-      transform: translate(-50%, -50%); 
+      width: 50%;
+      top: 73%;
+      left: 30.5%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      justify-content: flex-start;
     }
 
   /* ETC 제목 */
@@ -218,52 +226,51 @@ position: absolute;
     position: absolute;
     top: 76.5%;
     left: 25.8%;
-    width: 50%;
+    width: 48.4%;
     transform: translate(-50%, -50%); 
   }
     /* ETC 전체 */
     .etc-section {
       position: absolute;
-      width: 65%;
-      top: 81.5%;
-      left: 35.5%;
-      transform: translate(-50%, -50%); 
+      width: 45%;
+      top: 83.5%;
+      left: 27.5%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      justify-content: flex-start;
     } 
 
   /* 백엔드 제목 */
   .backend_image {
     position: absolute;
-    top: 60%;
-    left: 76%;
-    width: 50%;
+    top: 58.5%;
+    left: 74%;
+    width: 48.4%;
     transform: translate(-50%, -50%); 
   }
     /* 백엔드 전체 */
     .backend-section {
       position: absolute;
-      width: 65%;
-      top: 66.1%;
-      left: 87%;
-      transform: translate(-50%, -50%); 
+      width: 35%;
+      top: 66.6%;
+      left: 72%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      justify-content: flex-start;
     } 
 
   /* 그외 스킬 */
   .but_skill_image {
     position: absolute;
-    top: 79%;
-    left: 76%;
-    width: 50%;
+    top: 81.7%;
+    left: 73.9%;
+    width: 48%;
     transform: translate(-50%, -50%); 
   }  
-
-  /* 스킬 전체 */
-  .skill-items {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-    justify-content: flex-start;
-    max-width: 70%; /* 한 줄에 두 개만 배치할 폭 제한 */
-  }
   .skill-items img {
     height: 17px;
     object-fit: contain;
