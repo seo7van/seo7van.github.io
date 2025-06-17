@@ -1,0 +1,276 @@
+/* 스킬 전체 */
+.skill-container {
+  position: relative;
+  font-family: 'Freesentation', sans-serif;
+}
+
+.hover-effect {
+  transition: transform 0.3s ease;
+}
+.hover-effect:hover {
+  transform: scale(1.1);
+}
+
+/* 화면이 768px 이하일 때 hover 아예 제거 */
+@media (max-width: 768px) {
+  .hover-effect:hover {
+    transform: none !important;
+  }
+}
+
+/* 메인 배경 이미지 */
+.skill_main_image {
+  position: relative;
+  margin: auto;
+  z-index: 0;
+}
+
+/* 서진 이미지 */
+.seojin_image {
+position: absolute;
+  top: 24.3%;
+  left: 14.7%;
+  width: 20%;
+}
+
+/* 학력 */
+.Education_image {
+position: absolute;
+  top: 8.4%;
+  left: 36.8%;
+  width: 23.2%;
+}
+
+/* 이력 */
+.Activities_Awards_image {
+position: absolute;
+  top: 32.9%;
+  left: 36.8%;
+  width: 23.9%;
+}
+
+/* 그외 스킬 */
+.but_skill_image {
+  position: absolute;
+  top: 63.3%;
+  left: 36.6%;
+  width: 23.2%;
+}
+
+/* 백엔드 제목 */
+.backend_image {
+  position: absolute;
+  top: 8.4%;
+  left: 61.4%;
+  width: 27%;
+}
+  /* 백엔드 전체 */
+  .backend-section {
+    position: absolute;
+    width: 100%;
+    top: 16%;
+    left: 63%;
+  }
+
+/* 프론트엔드 제목 */
+.frontend_image {
+  position: absolute;
+  top: 36%;
+  left: 61.4%;
+  width: 27%;
+}
+  /* 프론트엔드 전체 */
+  .frontend-section {
+    position: absolute;
+    width: 100%;
+    top: 44%;
+    left: 63%;
+  }
+
+/* 데이터베이스 제목 */
+.datevase_image {
+  position: absolute;
+  top: 59%;
+  left: 61.4%;
+  width: 27%;
+}
+  /* 데이터베이스 전체 */
+  .datevase-section {
+    position: absolute;
+    width: 100%;
+    top: 67%;
+    left: 63%;
+  }
+
+/* ETC 제목 */
+.etc_image {
+  position: absolute;
+  top: 71.4%;
+  left: 61.4%;
+  width: 27%;
+}
+  /* ETC 전체 */
+  .etc-section {
+    position: absolute;
+    width: 100%;
+    top: 79%;
+    left: 63%;
+  }
+
+/* 스킬 전체 */
+.skill-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: flex-start;
+  max-width: 350px; /* 한 줄에 두 개만 배치할 폭 제한 */
+}
+
+.skill-items img {
+  transition: transform 0.3s ease;
+}
+
+.skill-items img:hover {
+  transform: scale(1.1);
+}
+
+/* 📱 모바일 반응형 */
+@media (max-width: 768px) {
+  
+  .skill-container {
+    position: relative;
+    height: 100vh;  /* 뷰포트 높이만큼 꽉 채우기 */
+    margin-top: 10px;
+  }
+
+  /* 메인 배경 이미지 */
+  .skill_main_image {
+    position: relative;
+    margin: auto;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+  }  
+
+  /* 서진 이미지 */
+  .seojin_image {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%, -50%); 
+  }
+
+  /* 학력 */
+  .Education_image {
+    position: absolute;
+    top: 48.4%;
+    left: 25.8%;
+    width: 50%;
+    transform: translate(-50%, -50%); 
+  }
+
+  /* 이력 */
+  .Activities_Awards_image {
+    position: absolute;
+    top: 49.9%;
+    left: 76.4%;
+    width: 50%;
+    transform: translate(-50%, -50%); 
+  }
+
+  /* 프론트엔드 제목 */
+  .frontend_image {
+    position: absolute;
+    top: 60%;
+    left: 25.8%;
+    width: 50%;
+    transform: translate(-50%, -50%); 
+  }
+    /* 프론트엔드 전체 */
+    .frontend-section {
+      position: absolute;
+      width: 100%;
+      top: 67%;
+      left: 54.5%;
+      transform: translate(-50%, -50%); 
+    }
+
+  /* 데이터베이스 제목 */
+  .datevase_image {
+    position: absolute;
+    top: 75%;
+    left: 25.8%;
+    width: 50%;
+    transform: translate(-50%, -50%); 
+  }
+    /* 데이터베이스 전체 */
+    .datevase-section {
+      position: absolute;
+      width: 100%;
+      top: 78.5%;
+      left: 54.5%;
+      transform: translate(-50%, -50%); 
+    }
+
+  /* ETC 제목 */
+  .etc_image {
+    position: absolute;
+    top: 82.5%;
+    left: 25.8%;
+    width: 50%;
+    transform: translate(-50%, -50%); 
+  }
+    /* ETC 전체 */
+    .etc-section {
+      position: absolute;
+      width: 100%;
+      top: 91.5%;
+      left: 54.5%;
+      transform: translate(-50%, -50%); 
+    } 
+
+  /* 백엔드 제목 */
+  .backend_image {
+    position: absolute;
+    top: 60%;
+    left: 76%;
+    width: 50%;
+    transform: translate(-50%, -50%); 
+  }
+    /* 백엔드 전체 */
+    .backend-section {
+      position: absolute;
+      width: 100%;
+      top: 70.4%;
+      left: 105%;
+      transform: translate(-50%, -50%); 
+    } 
+
+  /* 그외 스킬 */
+  .but_skill_image {
+    position: absolute;
+    top: 89.6%;
+    left: 75.8%;
+    width: 50%;
+    transform: translate(-50%, -50%); 
+  }  
+
+
+  /* 스킬 전체 */
+  .skill-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: flex-start;
+    max-width: 230px; /* 한 줄에 두 개만 배치할 폭 제한 */
+  }
+
+  /* 호버 효과 제거 */
+  .hover-effect {
+    transition: none !important;
+  }
+  .hover-effect:hover {
+    transform: translate(-50%, -50%) !important;
+  }
+}

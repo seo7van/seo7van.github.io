@@ -54,9 +54,8 @@ function Header({ aboutRef, menuOpen, setMenuOpen }) {
                 navigate('/', { state: { scrollTo: 'about' } });
               }
             })}>About ME</div>    
-
+            <div className="nav-menu-content" onClick={() => { navigate('/Skill') }} >보유스킬</div>
             <div className="nav-menu-content" onClick={() => { navigate('/Project') }} >프로젝트</div>
-            <div className="nav-menu-content" onClick={() => { navigate('/UserSupportList') }} >보유스킬</div>
             <div className="nav-menu-content" onClick={() => { navigate('/CoverLetter') }} >자기소개서</div>
             <div className="nav-menu-content" onClick={() => { navigate('/PortPoilo') }} >포트폴리오</div>
           </div>            

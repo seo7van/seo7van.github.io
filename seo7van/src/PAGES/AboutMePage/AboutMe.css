@@ -156,7 +156,7 @@ body {
     }
       .fade-in-1 {
         animation: fadeInOnly 2s ease forwards;
-        animation-delay: 1s;
+        animation-delay: 0.5s;
       }
 
     /* 도전은 재미 */
@@ -171,7 +171,7 @@ body {
     }
       .fade-in-3 {
         animation: fadeInOnly 2s ease forwards;
-        animation-delay: 2s;
+        animation-delay: 1s;
       }    
 
     /* 깔끔은 기본 */
@@ -186,7 +186,7 @@ body {
     }
       .fade-in-2 {
         animation: fadeInOnly 2s ease forwards;
-        animation-delay: 3s;
+        animation-delay: 1.5s;
       }
 
     /* 감각 개발자 */
@@ -201,6 +201,6 @@ body {
     }
       .fade-in-4 {
         animation: fadeInOnly 2s ease forwards;
-        animation-delay: 4s;
+        animation-delay: 2s;
       }
 }    

@@ -13,6 +13,7 @@ import MadipacsPDF from './PAGES/ProjectPage/MadipacsPDF';
 import DecobetPDF from './PAGES/ProjectPage/DecobetPDF';
 import CoverLetter from './PAGES/CoverLetterPage/CoverLetter';
 import PortPoilo from './PAGES/PortPoiloPage/PortPoilo';
+import Skill from './PAGES/SkillPage/Skill';
 
 function App() {
   const aboutRef = useRef(null); //ref 생성
@@ -24,6 +25,8 @@ function App() {
       <div className="pages">
         <Routes>
           <Route path="/" element={<Main aboutRef={aboutRef} menuOpen={menuOpen}/>} />
+
+          <Route path="/Skill" element={<Skill />} />
 
           <Route path="/project" element={<Project />} />
             <Route path="/popspot" element={<PopspotPDF />} />
