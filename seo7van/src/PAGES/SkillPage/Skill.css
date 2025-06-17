@@ -277,9 +277,12 @@ position: absolute;
   flex-wrap: wrap;
   justify-content: flex-start;
   gap: 4px;
-  max-height: 24px;
-  object-fit: contain;
+  max-height: 25px;
 }
+
+ .skill-items img {
+    max-height: 20px;
+  }
 
   /* 호버 효과 제거 */
   .hover-effect {
