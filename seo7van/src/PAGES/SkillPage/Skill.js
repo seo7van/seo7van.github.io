@@ -10,7 +10,7 @@ const Skill = () => {
       className="skill_main_image"
       alt="메인 배경 이미지"
     />
-    
+
     <img  
       src="/images/SkillImages/seojin.png"
       className="seojin_image hover-effect"
@@ -35,28 +35,28 @@ const Skill = () => {
       alt="그외스킬"
     />   
 
-      <img  
-        src="/images/SkillImages/Backend.png"
-        className="backend_image hover-effect"
-        alt="백엔드 제목"
-      />       
+    <img  
+      src="/images/SkillImages/Backend.png"
+      className="backend_image hover-effect"
+      alt="백엔드 제목"
+    />       
       
-      <img  
-        src="/images/SkillImages/Frontend.png"
-        className="frontend_image hover-effect"
-        alt="프론트엔드 제목"
-      />  
+    <img  
+      src="/images/SkillImages/Frontend.png"
+      className="frontend_image hover-effect"
+      alt="프론트엔드 제목"
+    />  
 
-      <img  
-        src="/images/SkillImages/Datevase.png"
-        className="datevase_image hover-effect"
-        alt="데이터베이스 제목"
-      />  
+    <img  
+      src="/images/SkillImages/Datevase.png"
+      className="datevase_image hover-effect"
+      alt="데이터베이스 제목"
+    />  
 
-      <img  
-        src="/images/SkillImages/ETC.png"
-        className="etc_image hover-effect"
-        alt="ETC 제목"
+    <img  
+      src="/images/SkillImages/ETC.png"
+      className="etc_image hover-effect"
+      alt="ETC 제목"
       />  
 
     
@@ -69,8 +69,6 @@ const Skill = () => {
         <img src="https://img.shields.io/badge/json%20web%20tokens-%23000000.svg?&style=for-the-badge&logo=json%20web%20tokens&logoColor=white"  alt="JWT" />
         <img src="https://img.shields.io/badge/node.js-%23339933.svg?&style=for-the-badge&logo=node.js&logoColor=white"  alt="Node.js" />
         <img src="https://img.shields.io/badge/Redis-%23DC382D.svg?&style=for-the-badge&logo=redis&logoColor=white"  alt="Redis" />
-        <img src="https://img.shields.io/badge/JUnit5-25A162?style=for-the-badge&logo=junit5&logoColor=white"  alt="JUnit5" />
-        <img src="https://img.shields.io/badge/Mockito-6DB33F?style=for-the-badge&logo=mockito&logoColor=white"  alt="Mockito" />
       </div>
 
     </div>
