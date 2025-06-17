@@ -271,8 +271,9 @@ position: absolute;
     width: 48%;
     transform: translate(-50%, -50%); 
   }  
+
   .skill-items img {
-    height: 27px;
+    max-height: 27px;
     object-fit: contain;
   }  
 
