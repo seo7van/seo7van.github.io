@@ -139,7 +139,7 @@ position: absolute;
   
   .skill-container {
     position: relative;
-    height: 100vh;  /* 뷰포트 높이만큼 꽉 채우기 */
+    height: 130vh;  /* 뷰포트 높이만큼 꽉 채우기 */
     margin-top: 10px;
   }
 
