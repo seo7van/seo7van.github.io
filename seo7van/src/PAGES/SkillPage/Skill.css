@@ -139,7 +139,7 @@ position: absolute;
   
   .skill-container {
     position: relative;
-    height: 130vh;  /* 뷰포트 높이만큼 꽉 채우기 */
+    height: 120vh;  /* 뷰포트 높이만큼 꽉 채우기 */
     margin-top: 10px;
   }
 
@@ -155,7 +155,7 @@ position: absolute;
   /* 서진 이미지 */
   .seojin_image {
     position: absolute;
-    top: 23%;
+    top: 24%;
     left: 50%;
     width: 60%;
     transform: translate(-50%, -50%); 
@@ -174,7 +174,7 @@ position: absolute;
   .Activities_Awards_image {
     position: absolute;
     top: 49.9%;
-    left: 76.4%;
+    left: 76%;
     width: 50%;
     transform: translate(-50%, -50%); 
   }
@@ -250,8 +250,8 @@ position: absolute;
   /* 그외 스킬 */
   .but_skill_image {
     position: absolute;
-    top: 80%;
-    left: 75.8%;
+    top: 79%;
+    left: 76%;
     width: 50%;
     transform: translate(-50%, -50%); 
   }  
