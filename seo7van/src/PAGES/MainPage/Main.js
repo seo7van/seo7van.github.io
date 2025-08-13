@@ -3,17 +3,43 @@ import { useLocation } from 'react-router-dom';
 
 import AboutMe from '../AboutMePage/AboutMe';
 import './Main.css';
+import About from '../AboutMePage/About';
+import Project from './../ProjectPage/Project';
 
 
 const Main = ({ aboutRef, menuOpen }) => {
   const [animate, setAnimate] = useState(false);
   const location = useLocation();
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);  
+  const [bgColor, setBgColor] = useState('#ffffff'); // 기본 흰색
 
   //Main페이지 로드시 애니메이션 실행
   useEffect(() => {
     setAnimate(true); 
   }, []);
+
+    // 배경 색 스크롤에 따라 점점 파랑으로
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const maxScroll = window.innerHeight * 0.8; // 전환 기준
+      const ratio = Math.min(scrollY / maxScroll, 1);
+
+      // white → #164fc0 (22, 79, 192)
+      const r = Math.round(255 - (255 - 22) * ratio);
+      const g = Math.round(255 - (255 - 79) * ratio);
+      const b = Math.round(255 - (255 - 192) * ratio);
+
+      setBgColor(`rgb(${r}, ${g}, ${b})`);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // 애니메이션
+  useEffect(() => { setAnimate(true); }, []);
+
 
   //About Me 스크롤 이동
   useEffect(() => {
@@ -35,7 +61,8 @@ const Main = ({ aboutRef, menuOpen }) => {
   }, []);  
 
   return (
-    <>
+    <>    
+    <div className="main-wrapper" style={{ backgroundColor: bgColor, transition: 'background-color 0.5s linear' }}>
       <div className='main_container' style={{ position: 'relative' }}> 
         <img  
           src="/images/MainImages/main.png"
@@ -57,10 +84,14 @@ const Main = ({ aboutRef, menuOpen }) => {
             />
           </div>
           )}
-  
+        </div>
       </div>
-      {/* 어바웃미 섹션 */}
+      {/* 어바웃미 */}
+      <About />
       <AboutMe ref={aboutRef} />
+
+      {/*프로젝트 */}
+      <Project />
       
       {/* 우측 하단 깃허브 및 스크롤 */}
       <div className="social-sidebar">

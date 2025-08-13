@@ -1,0 +1,52 @@
+.about-container {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Pretendard', sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #164fc0;
+}
+
+.background-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.about-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 150px 20px 20px;
+}
+
+.about-title {
+  font-size: 200px;
+  font-weight: bold;
+  letter-spacing: 10px;
+  margin: 0;
+}
+
+.about-subtitle {
+  font-size: 25px;
+  margin-top: 30px;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+.highlight {
+  color: yellow;
+}
+
+.about-korean {
+  font-size: 16px;
+  margin-top: 30px;
+  color: #e0e0e0;
+}

@@ -4,3 +4,8 @@
   margin: 0;
   padding: 0;
 }
+
+.about-page-wrapper {
+  width: 100%;
+  min-height: 200vh; /* 스크롤 테스트용 */
+}

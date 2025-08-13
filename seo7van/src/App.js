@@ -14,18 +14,20 @@ import DecobetPDF from './PAGES/ProjectPage/DecobetPDF';
 import CoverLetter from './PAGES/CoverLetterPage/CoverLetter';
 import PortPoilo from './PAGES/PortPoiloPage/PortPoilo';
 import Skill from './PAGES/SkillPage/Skill';
+import About from './PAGES/AboutMePage/About';
 
 function App() {
   const aboutRef = useRef(null); //ref 생성
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="App">
+    <div className="about-wrapper" >
       <Header aboutRef={aboutRef} menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div className="pages">
         <Routes>
           <Route path="/" element={<Main aboutRef={aboutRef} menuOpen={menuOpen}/>} />
 
+          <Route path='/About' element={<About />} />
           <Route path="/Skill" element={<Skill />} />
 
           <Route path="/project" element={<Project />} />
